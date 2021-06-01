@@ -56,7 +56,7 @@ body {
 /* Width at 1024px and below */
 @media screen and (max-width: 1024px) {
   body {
-    background-color: #333;
+    background-color: blue;
   }
 
   .wrapper {
@@ -75,10 +75,14 @@ body {
   }
 }
 
+
+
 /* Width at 768px and below */
 @media screen and (max-width: 768px) {
+
+
   body {
-    background-color: #333;
+    background-color: red;
   }
 
   .wrapper {
@@ -95,6 +99,10 @@ body {
   #sidebar {
     margin-top: 40px;
   }
+
+
+
+
 }
 
 /* Width at 600px and below */

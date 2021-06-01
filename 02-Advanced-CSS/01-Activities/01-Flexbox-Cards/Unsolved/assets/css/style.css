@@ -35,6 +35,13 @@ main h2 {
 
 .flex-container {
   /* TODO: Enter your CSS here */
+  display: flex;
+  /* instruct it to break onto next line if it runs out of space */
+  flex-wrap: wrap;
+  /* put all unused space between items */
+  justify-content: space-between;
+  width: 100%;
+
 }
 
 /* flex child */
@@ -60,7 +67,7 @@ main h2 {
   /* sets minimum height value so there's room */
   min-height: 250px;
 
-  /* rather than using position, use flexbox and create columns instead of rows 
+  /* rather than using position, use flexbox and create columns instead of rows
   TODO: Enter your CSS here.
   */
 }
