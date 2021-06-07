@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Arrays Demo</title>
-  </head>
-  <body>
+<html lang="en">
 
-    <h1>Open the console to see the magic!</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="./Assets/style.css" />
+</head>
 
-    <script type="text/javascript">
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password</h2>
+      </div>
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      </div>
+      <div class="card-footer">
+        <button id="generate" class="btn">Generate Password</button>
+      </div>
+    </div>
+  </div>
+  <script src="./Assets/script.js"></script>
+</body>
 
-    // Our array of zoo animals.
-    var zooAnimals = ["Zebra", "Rhino", "Giraffe", "Owl"];
-
-    // Prints 4 to the console because there are 4 items in our zooAnimals array.
-    console.log(zooAnimals.length);
-
-    // Prints Rhino to the console. Remember, the first item in an array has an index position of 0!
-    console.log(zooAnimals[1]);
-
-    // Prints undefined... because the last index ("Owl") is 3.
-    console.log(zooAnimals[4]);
-
-    </script>
-
-  </body>
 </html>

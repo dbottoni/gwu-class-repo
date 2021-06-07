@@ -9,5 +9,16 @@
       Open the console to see a list of random numbers!
     </h1>
     <!-- TODO: Add JavaScript code to log 10 random numbers in the console -->
+    <script>
+      for (var i = 0; i < 10; i++){
+        // i < 10 will return 9 numbers in the log
+        // Math.random generates a random number between 0 and 0.9999
+        // Math.floor rounds down, so we will get a number between 0 and 9
+        // multiplying by 1001 will give us a number between 1 and 1000
+        var num = Math.floor(Math.random() * 1001);
+
+        console.log(num);
+      }
+    </script>
   </body>
 </html>
