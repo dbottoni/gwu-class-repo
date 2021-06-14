@@ -14,8 +14,21 @@ function countdown() {
   var timeInterval = setInterval(function() {
     //
     // YOUR CODE HERE
+    if(timeLeft > 0)  {
+      timerEl.textContent = timeLeft + ' second(s) remaining';
+
+      timeLeft--;
+
+     } else {
+      timerEl.textContent = "";
+
+      clearInterval(timeInterval);
+
+      displayMessage();
+
+    }
     //
-  });
+  },  1000);
 }
 
 // Displays the message one word at a time
