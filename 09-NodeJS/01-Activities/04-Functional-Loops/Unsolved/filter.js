@@ -23,12 +23,14 @@ const isPrime = num => {
 //
 // YOUR CODE HERE
 //
+const primeArray = originalArray.filter(isPrime);
 console.log(primeArray);
 
 // 2. A filter that runs through the `originalArray` and creates a new array `moreThan5Array` containing only its numbers larger than 5
 //
 // YOUR CODE HERE
 //
+const moreThan5Array = originalArray.filter(num => num > 5);
 console.log(moreThan5Array);
 
 // Bonus: Use arrow functions as callbacks!

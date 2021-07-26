@@ -33,6 +33,20 @@
 
 
       // TODO: Create a function called "vowelChecker" that takes one argument (x) and checks if the first letter is a vowel
+      function vowelChecker(x) {
+        var firstChar = x.toLowerCase().charAt(0);
+        if (
+          firstChar === "a" ||
+          firstChar === "e" ||
+          firstChar === "i" ||
+          firstChar === "o" ||
+          firstChar === "u" 
+        ) {
+          return 'Yes, this first letter is a vowel!';
+        } else{
+          return 'No, the first letter is not a vowel.';
+        }
+      }
 
       // Check the browser console to see if the following is logged correctly
       // kine below - created variable "sum" and we want to assign the listed values to it

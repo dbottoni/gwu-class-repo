@@ -8,8 +8,10 @@ function myFunction() {
       searchTerm +
       // Add the rating parameter
       // YOUR CODE HERE
-      //
+      '&rating=' + 
       // Remember to add your API key
+      rating + 
+      '&api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN&limit=1'
   )
     .then(function(response) {
       return response.json();

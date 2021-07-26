@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,8 +9,12 @@
     <h1>Click to Eat Sandwich</h1>
     <!-- Create three button elements each with an id and corresponding content for our sandwiches -->
 
-    <!-- BONUS: Render an image for each click event. You will need to declare an empty `<div>` with an id of `#image-div` for this -->
+      <button id="btn1">Apple</button>      
+      <button id="btn2">Banana</button>      
+      <button id="btn3">Strawberry</button>      
 
+    <!-- BONUS: Render an image for each click event. You will need to declare an empty `<div>` with an id of `#image-div` for this -->
+      <div id="image-div"></div>
     <!-- Link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -18,15 +22,16 @@
       // Create three global variables for tracking the number of sandwiches eaten
       //
       // YOUR CODE HERE
-      //
-
-      // Here we create various "on click" events which capture clicks
-      // Inside each click event is the code to create an alert, update the counter, and show the updated count.
-      // Take note that you can chain events onto an element
-      // With this even if our ids are created at a later date our events will still always work
-      //
-      // YOUR CODE HERE
-      //
-    </script>
+      // 
+      $('#btn1').on('click', function ()  {
+        $('#image-div').html(
+           "<img src='https://i2.wp.com/ceklog.kindel.com/wp-content/uploads/2013/02/firefox_2018-07-10_07-50-11.png?fit=641%2C618&ssl=1' />"
+        );
+      });
+      </script>
   </body>
 </html>
+
+
+
+      

@@ -10,7 +10,7 @@ const arya = {
 //
 // YOUR CODE HERE
 //
-
+const { first, origin } = arya;
 console.log(first); // <= Arya
 console.log(origin); // <= Winterfell
 
@@ -36,7 +36,7 @@ const john = {
 //
 // YOUR CODE HERE
 //
-
+const { brother1, brother2 } = john.family.brothers;
 console.log(brother1); // <= Rob Stark
 console.log(brother2); // <= Rickon Stark
 
@@ -48,8 +48,8 @@ const characters = ['Ned Stark', 'The Quiet Wolf', 'House Stark'];
 //
 // YOUR CODE HERE
 //
-
-console.log(name, alias, allegiance); // <= Ned Stark The Quiet Wolf House Stark
+const [nameId, alias, allegiance] = characters;
+console.log(nameId, alias, allegiance); // <= Ned Stark The Quiet Wolf House Stark
 
 // =============================================================
 // 4. Strings
@@ -60,5 +60,5 @@ const skills = 'male, Baratheon, Cersei';
 //
 // YOUR CODE HERE
 //
-
+const [gender, family, spouse] = skills.split(',');
 console.log(gender, family, spouse); // <= male Baratheon Cersei

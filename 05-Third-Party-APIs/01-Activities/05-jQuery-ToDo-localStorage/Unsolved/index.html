@@ -69,39 +69,54 @@
         // Get the to-do "value" from the textbox and store it as a variable using `.val()` and `.trim()`
         // YOUR CODE HERE
         //
+        var toDoTask = $('#to-do')
+        .val()
+        .trim();
 
         // Add the new to-do to our local 'list' variable
         // YOUR CODE HERE
         //
+        list.push(toDoTask);
 
         // Update the to-dos on the page
         // YOUR CODE HERE
         //
+        renderTodos(list);
 
         // Save the to-dos into localStorage
         // We need to use JSON.stringify to turn the list from an array into a string
         // YOUR CODE HERE
         //
+        localStorage.setItem('todoList', JSON.stringify(list));
 
         // Clear the textbox when done using `.val()`
         // YOUR CODE HERE
         //
+        $('#to-do').val('');
+
       });
 
       $(document).on('click', '.checkbox', function() {
         // Get the `id` of the button from its data attribute and hold in a variable called 'toDoNumber'
         // YOUR CODE HERE
         //
+        var toDoNumber = $(this).attr('data-to-do');
+
         // Delete the to-do with that `id` from our local `list` using `.splice()`
         // YOUR CODE HERE
         //
+        list.splice(toDoNumber, 1);
+
         // Update the to-dos on the page
         // YOUR CODE HERE
         //
+        renderTodos(list);
         // Save the to-dos into localStorage
         // We need to use JSON.stringify to turn the list from an array into a string
         // YOUR CODE HERE
         //
+        localStorage.setItem('todoList', JSON.stringify(list));
+
       });
 
       // Renders our to-dos on page load

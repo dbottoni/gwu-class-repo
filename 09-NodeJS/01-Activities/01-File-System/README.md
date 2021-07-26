@@ -8,7 +8,8 @@ In this activity, you will read and write text to a file using the `fs` package.
 
 * Import the `fs` module
 
-* Write a method that will accept a command line argument and use it to create a text file and write to it. If there are no errors, it should print "Done!" in the console. 
+* Write a method that will accept a command line argument 
+and use it to create a text file and write to it. If there are no errors, it should print "Done!" in the console. 
 
 * Write a method that will read the newly created text file and log its contents in the console.
 
