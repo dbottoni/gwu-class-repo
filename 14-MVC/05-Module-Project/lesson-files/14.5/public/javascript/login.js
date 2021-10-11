@@ -48,6 +48,7 @@ async function signupFormHandler(event) {
   }
 }
 
+//connects to handlebars
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 
 document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
